@@ -1,0 +1,39 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>ClientDevBridge Releases</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<style>
+  :root { color-scheme: light dark; }
+  body { font: 16px/1.6 system-ui, sans-serif; max-width: 46rem; margin: 4rem auto; padding: 0 1.5rem; }
+  code, pre { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: .9em; }
+  pre { background: color-mix(in srgb, currentColor 8%, transparent); padding: 1rem; border-radius: 6px; overflow-x: auto; }
+  a { color: inherit; }
+</style>
+<h1>ClientDevBridge Releases</h1>
+<p>
+  A static Maven repository for
+  <a href="https://github.com/CyclopsMC/ClientDevBridge">ClientDevBridge</a>, a dev-only mod that
+  lets a coding agent drive a Minecraft dev client from the shell.
+</p>
+<pre>https://cyclopsmc.github.io/ClientDevBridge-Releases</pre>
+<p>
+  You do not normally add this by hand —
+  <a href="https://www.npmjs.com/package/@cyclopsmc/clientdevbridge-cli"><code>clientdevbridge start</code></a>
+  injects it into your build at launch. To do it yourself:
+</p>
+<pre>repositories {
+    maven {
+        url = 'https://cyclopsmc.github.io/ClientDevBridge-Releases'
+        content { includeGroup 'org.cyclops.clientdevbridge' }
+    }
+}
+
+dependencies {
+    modLocalRuntime 'org.cyclops.clientdevbridge:clientdevbridge-1.21.1-fabric:+'
+}</pre>
+<p>
+  Artifact ids are <code>clientdevbridge-&lt;minecraft version&gt;-&lt;loader&gt;</code>. There is
+  no directory index: browse the tree on
+  <a href="https://github.com/CyclopsMC/ClientDevBridge-Releases/tree/master/org/cyclops/clientdevbridge">GitHub</a>
+  instead, or read an artifact's <code>maven-metadata.xml</code> for its published versions.
+</p>
