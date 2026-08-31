@@ -3,8 +3,8 @@
   <groupId>org.cyclops.clientdevbridge</groupId>
   <artifactId>clientdevbridge-1.21.1-fabric</artifactId>
   <versioning>
-    <latest>1.0.0-119</latest>
-    <release>1.0.0-119</release>
+    <latest>1.0.0-122</latest>
+    <release>1.0.0-122</release>
     <versions>
       <version>1.0.0-39</version>
       <version>1.0.0-42</version>
@@ -34,7 +34,8 @@
       <version>1.0.0-113</version>
       <version>1.0.0-116</version>
       <version>1.0.0-119</version>
+      <version>1.0.0-122</version>
     </versions>
-    <lastUpdated>20260831155317</lastUpdated>
+    <lastUpdated>20260831160103</lastUpdated>
   </versioning>
 </metadata>
